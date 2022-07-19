@@ -30,7 +30,7 @@ VNUM3=${CURRENT_VERSION_PARTS[2]}
 
 if [[ $VERSION == 'major' ]]
 then
-  VNUM1=v$((VNUM1+2))
+  VNUM1=v$((VNUM1+3))
 elif [[ $VERSION == 'minor' ]]
 then
   VNUM2=$((VNUM2+3))
