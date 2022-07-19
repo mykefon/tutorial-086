@@ -16,7 +16,7 @@ CURRENT_VERSION=`git describe --abbrev=0 --tags 2>/dev/null`
 
 if [[ $CURRENT_VERSION == '' ]]
 then
-  CURRENT_VERSION='v1.1.0'
+  CURRENT_VERSION='v2.1.0'
 fi
 echo "Current Version: $CURRENT_VERSION"
 
@@ -30,13 +30,13 @@ VNUM3=${CURRENT_VERSION_PARTS[2]}
 
 if [[ $VERSION == 'major' ]]
 then
-  VNUM1=v$((VNUM1+1+1))
+  VNUM1=v$((VNUM1+2))
 elif [[ $VERSION == 'minor' ]]
 then
-  VNUM2=$((VNUM2+1+1))
+  VNUM2=$((VNUM2+2))
 elif [[ $VERSION == 'patch' ]]
 then
-  VNUM3=$((VNUM3+1+1))
+  VNUM3=$((VNUM3+2))
 else
   echo "No version type (https://semver.org/) or incorrect type specified, try: -v [major, minor, patch]"
   exit 1
