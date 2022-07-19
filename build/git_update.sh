@@ -33,10 +33,10 @@ then
   VNUM1=v$((VNUM1+2))
 elif [[ $VERSION == 'minor' ]]
 then
-  VNUM2=$((VNUM2+2))
+  VNUM2=$((VNUM2+3))
 elif [[ $VERSION == 'patch' ]]
 then
-  VNUM3=$((VNUM3+2))
+  VNUM3=$((VNUM3+3))
 else
   echo "No version type (https://semver.org/) or incorrect type specified, try: -v [major, minor, patch]"
   exit 1
